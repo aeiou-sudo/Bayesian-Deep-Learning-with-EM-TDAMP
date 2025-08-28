@@ -1,0 +1,2 @@
+pip install tensorflow-macos==2.13.0 tensorflow-metal tensorflow-probability==0.20.0 numpy==1.23.5 scipy==1.9.3 matplotlib==3.6.2
+python train_mnist_tdamp.py --batch_size 100 --em_iters 30 --sparsity 0.5

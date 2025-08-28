@@ -1,0 +1,50 @@
+(tf-env) pauljose@Pauls-MacBook-Air Deep Learning % python train_mnist_tdamp.py --batch_size 100 --em_iters 10 --sparsity 0.5
+2025-04-24 14:01:41.669517: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M1
+2025-04-24 14:01:41.669803: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 8.00 GB
+2025-04-24 14:01:41.669851: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 2.67 GB
+2025-04-24 14:01:41.670769: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:303] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2025-04-24 14:01:41.671339: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:269] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2025-04-24 14:01:41,809 - INFO - GPU test result: [3.]
+2025-04-24 14:01:41,811 - INFO - Starting EM-TDAMP MNIST classification
+2025-04-24 14:01:41,811 - INFO - Loading and preprocessing MNIST dataset
+2025-04-24 14:01:42,006 - INFO - MNIST dataset loaded: 10000 training samples, 10000 test samples
+2025-04-24 14:01:42,006 - INFO - Building MLP model: 784 -> 128 (ReLU) -> 10
+2025-04-24 14:01:42,116 - INFO - Starting EM-TDAMP training for 10 iterations with target sparsity 0.50
+2025-04-24 14:01:42,116 - INFO - Initializing TDAMP with 128 groups, initial v=1.00
+2025-04-24 14:01:42,157 - INFO - EM Iteration 1/10
+2025-04-24 14:01:42,902 - INFO - Batch 0: Loss = 73.4133, Average rho = 0.6010
+2025-04-24 14:01:49,846 - INFO - Val Accuracy = 0.8393, Precision = 0.8672, Recall = 0.8370, F1 = 0.8332, Sparsity = 0.5000, Avg Entropy = 0.1894, Avg Loss = 7.0704, Active Neurons = 64/128
+2025-04-24 14:01:49,846 - INFO - EM Iteration 2/10
+2025-04-24 14:01:49,913 - INFO - Batch 0: Loss = 3.0887, Average rho = 0.6686
+2025-04-24 14:01:56,398 - INFO - Val Accuracy = 0.8645, Precision = 0.8851, Recall = 0.8632, F1 = 0.8598, Sparsity = 0.5000, Avg Entropy = 0.0494, Avg Loss = 1.8460, Active Neurons = 64/128
+2025-04-24 14:01:56,399 - INFO - EM Iteration 3/10
+2025-04-24 14:01:56,467 - INFO - Batch 0: Loss = 5.2618, Average rho = 0.7375
+2025-04-24 14:02:03,263 - INFO - Val Accuracy = 0.8658, Precision = 0.8766, Recall = 0.8653, F1 = 0.8652, Sparsity = 0.5000, Avg Entropy = 0.0256, Avg Loss = 2.9743, Active Neurons = 64/128
+2025-04-24 14:02:03,263 - INFO - EM Iteration 4/10
+2025-04-24 14:02:03,338 - INFO - Batch 0: Loss = 3.2847, Average rho = 0.7866
+2025-04-24 14:02:10,174 - INFO - Val Accuracy = 0.8792, Precision = 0.8913, Recall = 0.8765, F1 = 0.8777, Sparsity = 0.5000, Avg Entropy = 0.0216, Avg Loss = 3.5004, Active Neurons = 64/128
+2025-04-24 14:02:10,174 - INFO - EM Iteration 5/10
+2025-04-24 14:02:10,244 - INFO - Batch 0: Loss = 1.3630, Average rho = 0.8186
+2025-04-24 14:02:17,528 - INFO - Val Accuracy = 0.8391, Precision = 0.8685, Recall = 0.8375, F1 = 0.8358, Sparsity = 0.5000, Avg Entropy = 0.0171, Avg Loss = 3.0937, Active Neurons = 64/128
+2025-04-24 14:02:17,528 - INFO - EM Iteration 6/10
+2025-04-24 14:02:17,604 - INFO - Batch 0: Loss = 3.6549, Average rho = 0.8402
+2025-04-24 14:02:25,150 - INFO - Val Accuracy = 0.8910, Precision = 0.9033, Recall = 0.8897, F1 = 0.8893, Sparsity = 0.5000, Avg Entropy = 0.0143, Avg Loss = 4.7064, Active Neurons = 64/128
+2025-04-24 14:02:25,150 - INFO - EM Iteration 7/10
+2025-04-24 14:02:25,230 - INFO - Batch 0: Loss = 1.3907, Average rho = 0.8536
+2025-04-24 14:02:32,901 - INFO - Val Accuracy = 0.8849, Precision = 0.9041, Recall = 0.8806, F1 = 0.8828, Sparsity = 0.5000, Avg Entropy = 0.0108, Avg Loss = 2.4904, Active Neurons = 64/128
+2025-04-24 14:02:32,901 - INFO - EM Iteration 8/10
+2025-04-24 14:02:32,982 - INFO - Batch 0: Loss = 1.5998, Average rho = 0.8654
+2025-04-24 14:02:40,768 - INFO - Val Accuracy = 0.9159, Precision = 0.9185, Recall = 0.9134, F1 = 0.9141, Sparsity = 0.5000, Avg Entropy = 0.0098, Avg Loss = 2.7473, Active Neurons = 64/128
+2025-04-24 14:02:40,768 - INFO - EM Iteration 9/10
+2025-04-24 14:02:40,865 - INFO - Batch 0: Loss = 2.3115, Average rho = 0.8742
+2025-04-24 14:02:49,152 - INFO - Val Accuracy = 0.9221, Precision = 0.9257, Recall = 0.9209, F1 = 0.9215, Sparsity = 0.5000, Avg Entropy = 0.0084, Avg Loss = 2.0284, Active Neurons = 64/128
+2025-04-24 14:02:49,152 - INFO - EM Iteration 10/10
+2025-04-24 14:02:49,253 - INFO - Batch 0: Loss = 0.9309, Average rho = 0.8809
+2025-04-24 14:02:58,521 - INFO - Val Accuracy = 0.9277, Precision = 0.9294, Recall = 0.9263, F1 = 0.9268, Sparsity = 0.5000, Avg Entropy = 0.0070, Avg Loss = 1.7701, Active Neurons = 64/128
+2025-04-24 14:02:58,521 - INFO - Training completed. Final Val Accuracy = 0.9277, Final Sparsity = 0.5000
+2025-04-24 14:02:58,521 - INFO - Generating enhanced visualization plots
+2025-04-24 14:02:59,620 - INFO - Plots saved: accuracy_vs_iteration.png, precision_recall_f1_vs_iteration.png, sparsity_vs_accuracy.png, per_class_uncertainty.png, confusion_matrix.png, active_neurons_vs_iteration.png, rho_distribution.png
+2025-04-24 14:02:59,625 - INFO - Metrics saved: training_history.csv, final_confusion_matrix.csv
+2025-04-24 14:02:59,625 - INFO - Saving final model to mnist_tdamp_model.keras
+2025-04-24 14:02:59,645 - INFO - Generating requirements.txt
+2025-04-24 14:02:59,645 - INFO - EM-TDAMP training finished

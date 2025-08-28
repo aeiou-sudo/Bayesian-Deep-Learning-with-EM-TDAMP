@@ -1,0 +1,10 @@
+pyenv install 3.10.13
+pyenv virtualenv 3.10.13 tf-env
+
+
+pyenv activate tf-env
+pip install -r requirements.txt
+
+cd '/Users/pauljose/Downloads/Deep Learning'
+pyenv activate tf-env
+python train_mnist_tdamp.py --batch_size 100 --em_iters 30 --sparsity 0.5
